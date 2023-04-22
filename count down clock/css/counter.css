@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	width: 100vw;
+	height: 100vh;
+	background: #0F2027;
+	background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+	transition: all 0.8s ease;
+}
+
+.header__content {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: #130f40;
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+	backdrop-filter: blur( 1px );
+	-webkit-backdrop-filter: blur( 1px );
+}
+
+.header__content h1 {
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 1rem;
+	background: white;
+	padding: 1rem;
+	border-radius: 0.4rem;
+}
+
+.btn__home {
+	text-decoration: none;
+	border: none;
+	outline: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 1rem;
+	background-color: #000000;
+	border-radius: 0.3rem;
+	padding: 0.7rem;
+}
+
+.body__container {
+	display: flex;
+	justify-content: center;
+	padding-top: 10rem;
+	width: 100%;
+	height: 100vh;
+	background: url("../img/newyear.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+
+.content__clock {
+	width: 350px;
+	height: 400px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0.5rem;
+	border: 1px solid black;
+	margin: 5px auto;
+	background: rgba( 255, 255, 255, 0.1);
+	box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+	backdrop-filter: blur( 1px );
+	-webkit-backdrop-filter: blur( 1px );
+	border-radius: 1rem;
+	border: 1px solid rgba( 255, 255, 255, 0.09);
+}
+
+.clock__lead {
+	margin: 5px auto;
+	width: 100%;
+	padding: 1rem;
+}
+
+.clock__lead >h1 {
+	line-height: 2rem;
+	color: black;
+	text-transform: uppercase;
+	font-size: 1rem;
+	letter-spacing: 2px;
+	font-style: italic;
+	text-align: center;
+}
+
+.clock__lead h1:nth-of-type(2) {
+	font-size: 2rem;
+	color: gray;
+}
+
+.clock__section {
+	width: 100%;
+	height: 200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	color: white;
+	font-size: 0.5rem;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 300;
+}
+
+.clock__section div {
+	width: 50px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	text-align: center;
+	position: relative;
+	margin-top: -50px;
+}
+
+.clock__section h1 {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 20px;
+	font-size: 0.5rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	background: yellow;
+	color: black;
+}
+
+.clock__section p {
+	font-size: 1rem;
+	width: 100%;
+	height: 30px;
+	background: black;
+	position: absolute;
+	top: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media(min-width:600px) {
+
+	.header__content {
+		width: 100%;
+		height: 100px;
+	}
+
+	.content__clock {
+		width: 650px;
+		height: 600px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 2rem;
+		border: 1px solid black;
+		margin: 1rem auto;
+		background: rgba( 255, 255, 255, 0.1);
+		box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.1 );
+		backdrop-filter: blur( 1px );
+		-webkit-backdrop-filter: blur( 1px );
+		border-radius: 1rem;
+		border: 1px solid rgba( 255, 255, 255, 0.09);
+	}
+
+	.clock__lead {
+		margin: 5px auto;
+		width: 100%;
+		padding: 1rem;
+		line-height: 2rem;
+	}
+
+	.clock__lead >h1 {
+		line-height: 4rem;
+		color: goldenrod;
+		text-transform: uppercase;
+		font-size: 3rem;
+		letter-spacing: 2px;
+		font-style: italic;
+		text-align: center;
+		padding: 1rem;
+		font-family: poppins;
+	}
+
+	.clock__lead h1:nth-of-type(2) {
+		font-size: 7rem;
+		color: green;
+	}
+
+	.clock__section {
+		width: 100%;
+		margin-top: 4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 50px;
+		color: white;
+		font-size: 0.5rem;
+		text-align: center;
+		text-transform: uppercase;
+		font-weight: 300;
+	}
+
+	.clock__section div {
+		width: 120px;
+		height: 150px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		gap: 10px;
+		text-align: center;
+		position: relative;
+		margin-top: -50px;
+	}
+
+	.clock__section h1 {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 75px;
+		font-size: 1rem;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		background: yellow;
+		color: black;
+	}
+
+	.clock__section p {
+		font-size: 3rem;
+		width: 100%;
+		height: 75px;
+		background: black;
+		position: absolute;
+		top: 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-weight: bolder;
+	}
+}

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	width: 100vw;
+	min-height: 100vh;
+	overflow: hidden;
+}
+
+@font-face {
+	font-family: 'digital-7';
+    src: url('digital-7.ttf');
+}
+
+.header__content {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #273c75;
+}
+
+.header__content h1 {
+	color: black;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.5rem;
+	background: white;
+	padding: 0.5rem;
+	border-radius: 0.4rem;
+}
+
+.btn__home {
+	text-decoration: none;
+	border: none;
+	outline: none;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 1px;
+	font-size: 1rem;
+	background-color: #000000;
+	border-radius: 0.3rem;
+	padding: 0.5rem;
+}
+
+.background__body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	background-image: url("../img/clk1.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	padding-top: 10rem;
+}
+
+.body__sec {
+	width: 300px;
+	height: 300px;
+	border: none;
+}
+
+.body__sec h1 {
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-weight: 600;
+	letter-spacing: 2px;
+	color: white;
+	padding: 1rem;
+}
+
+.clock__body {
+	width: 100%;
+	height: 150px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background: rgba(0,0,0,0.2);
+	border: none;
+	outline: none;
+	border-radius: 0.4rem;
+}
+
+.clock__body span {
+	width: 50px;
+	height: 50%;
+	border: none;
+	border-radius: 0.3rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #273c75;
+	color: white;
+	font-family: digital-7;
+	font-weight: 400;
+	font-size: 2rem;
+	letter-spacing: 1px;
+}
+
+.clock__body span:nth-child(4) {
+	height: 40%;
+	font-family: poppins;
+	font-size: 1.5rem;
+	font-weight: 700;
+	color: red;
+}
+
+@media(min-width:800px) {
+	.header__content h1 {
+		font-size: 1.5rem;
+		padding: 1rem;
+	}
+
+	.btn__home {
+		font-size: 1rem;
+		padding: 0.7rem;
+	}
+
+	.body__sec h1 {
+		font-size: 2rem;
+		padding: 1.5rem;
+	}
+
+	.body__sec {
+		width: 400px;
+		height: 400px;
+	}
+
+	.clock__body span {
+		font-size: 3rem;
+		width: 70px;
+	}
+}
